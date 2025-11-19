@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.box {
+    background: white;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3aae3a;
+}
+
+p {
+    font-size: 18px;
+    color: #34495e;
+}
