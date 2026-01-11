@@ -1,33 +1,72 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-    text-align: center;
-    padding: 50px;
+/* 1. Reset: Remove default messy spacing */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* "Code" aesthetic */
+}
+
+/* 2. The Canvas: Full screen, Dark Mode */
+body {
+    background-color: #0a0a0a; /* Almost black */
+    color: #ffffff;
+    display: flex;
+    justify-content: center; /* Center Horizontally */
+    align-items: center;     /* Center Vertically */
+    min-height: 100vh;       /* Full Viewport Height */
+}
+
+/* 3. The Card: Holds everything together */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Limits width on big screens */
+    padding: 20px;
+}
+
+/* 4. Profile Styling */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes it a circle */
+    border: 2px solid #333;
+    margin-bottom: 15px;
 }
 
 h1 {
-    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
-.box {
-    background: white;
-    width: 600px;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+.rank {
+    color: #888; /* Grey text for subtitle */
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #3aae3a;
+/* 5. The Buttons (The Interactive Elements) */
+.links {
+    display: flex;
+    flex-direction: column; /* Stack them vertically */
+    gap: 15px; /* Space between buttons */
 }
 
-p {
-    font-size: 18px;
-    color: #34495e;
+.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth animation */
+    background-color: #111;
+}
+
+/* 6. The Hover Effect (Micro-interaction) */
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+    transform: translateY(-2px); /* Slight lift */
 }
